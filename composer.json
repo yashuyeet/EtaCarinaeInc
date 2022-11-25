@@ -1,0 +1,7 @@
+{
+    "require": {
+        "firebase/php-jwt": "^6.3",
+        "google/apiclient": "^2.12",
+        "delight-im/auth": "^8.3"
+    }
+}
