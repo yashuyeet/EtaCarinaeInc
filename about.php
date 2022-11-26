@@ -53,7 +53,7 @@
       <h1 class="display-3 mb-4 animated slideInDown">About Us</h1>
       <nav aria-label="breadcrumb animated slideInDown">
         <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="./">Home</a></li>
+          <li class="breadcrumb-item"><a href=".">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">About Us</li>
         </ol>
       </nav>

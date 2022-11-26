@@ -34,10 +34,18 @@
           <?php
         } else {
           ?>
-          <a href="logout.php" class="nav-item nav-link">Welcome, <?php echo $auth->getUsername(); ?>! - Log Out</a>
+          <a href="account.php" class="nav-item nav-link" style="position: relative">
+            <span><?php echo $auth->getUsername(); ?></span>
+            &nbsp;
+            <div style="position: relative; width: 32px; height: 16px; display: inline-block">
+            <img width="32" height="32" style="border-radius: 32px; position: absolute; top: -4px" src="<?php $stmt = $db->prepare("SELECT avatar_url FROM users WHERE id = ?"); $stmt->execute([$auth->getUserId()]); echo $stmt->fetch()['avatar_url']; ?>">
+            </div>
+            <div style="border: 1px solid #355EFC; border-radius: 16px; position: absolute; top: 15px; left: 5px; right: 5px; bottom: 10px"></div>
+          </a>
           <?php
         }
         ?>
+        
       </div>
     </div>
   </nav>
